@@ -1,0 +1,38 @@
+/* Terminal App Styles */
+.terminal-window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Optional: keeps it from getting too wide */
+  height: auto;     /* Changed from 250px to auto-size */
+  background: #1e1e1e;
+  color: #f1f1f1;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  
+  /* Remove scrollbar for Chrome, Safari and Opera */
+  overflow: hidden; 
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.terminal-window {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.terminal-content .cmd {
+  margin: 6px 0;
+  cursor: url('../../assets/cursors/text.png'), text;
+}
+
+.terminal-content pre {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.terminal-content span {
+  font-weight: bold;
+  color: #ffffff;
+}

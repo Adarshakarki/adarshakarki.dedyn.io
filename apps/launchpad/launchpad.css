@@ -1,0 +1,62 @@
+.launchpad-app {
+  width: 100%;
+  height: 100%;
+  padding: 42px;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Grid */
+.launchpad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 44px;
+  justify-items: center;
+}
+
+/* Item */
+.launchpad-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Icon container */
+.icon-box {
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+/* SVG file */
+.icon-box img {
+  width: 46px;
+  height: 46px;
+  pointer-events: none;
+}
+
+/* Label */
+.launchpad-item span {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #222;
+  text-align: center;
+}
+
+/* Hover */
+.launchpad-item:hover .icon-box {
+  transform: scale(1.1);
+}
+
+.launchpad-item:active .icon-box {
+  transform: scale(0.95);
+}

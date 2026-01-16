@@ -1,0 +1,19 @@
+assets/
+├── wallpaper.jpg
+├── icons/
+│   ├── finder.png
+│   ├── folder.png
+│   ├── mail.png
+│   └── terminal.png
+├── window-icons/
+│   ├── finder-small.png
+│   └── folder-small.png
+├── cursors/
+│   ├── default.png
+│   ├── pointer.png
+│   └── text.png
+├── sounds/
+│   ├── open.wav
+│   └── close.wav
+└── fonts/
+    └── SF-Pro.ttf

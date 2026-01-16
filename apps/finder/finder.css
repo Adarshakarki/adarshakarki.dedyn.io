@@ -1,0 +1,74 @@
+/* ----------------------------- */
+/*       FINDER SYSTEM INFO      */
+/* ----------------------------- */
+.content .finder-system-info {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  cursor: url('../../cursors/text.png'), text;
+  overflow: hidden; /* no scrollbars */
+}
+
+/* Left profile image */
+.content .finder-system-info .profile-pic {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .finder-system-info .profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.8);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  object-fit: cover;
+  cursor: url('../../cursors/default.png'), auto;
+}
+
+/* Right info panel */
+.content .finder-system-info .info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.content .finder-system-info .info h2 {
+  font-size: 20px;
+  color: #333;
+  cursor: url('../../cursors/default.png'), auto;
+}
+
+.content .finder-system-info .info p {
+  color: #555;
+  cursor: url('../../cursors/text.png'), text;
+}
+
+/* Social links */
+.content .finder-system-info .info .socials {
+  display: flex;
+  gap: 12px;
+  cursor: url('../../cursors/pointer.png'), pointer;
+}
+
+.content .finder-system-info .info .socials a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.content .finder-system-info .info .socials a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: small separator line */
+.content .finder-system-info .info hr {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 8px 0;
+}

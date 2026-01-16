@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My DuckDNS Site</title>
+  <meta charset="UTF-8">
+  <title>Adarsha</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/adarsha.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my site!</h1>
-    <p>This item was added via GitHub.</p>
+
+  <!-- MENU BAR -->
+  <div class="menu-bar">
+    <div class="menu-left">
+      <span><img src="assets/icons/apple.png" alt="apple" class="apple"></span>
+      <span>Finder</span>
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Go</span>
+      <span>Window</span>
+      <span>Help</span>
+    </div>
+    <div class="menu-right">
+      <span><img src="assets/icons/battery.png" size="32x32" alt="Battery icon" class="battery"></span>
+      <span id="date">Thu Jan 15</span>
+      <span id="time">12:00</span>
+    </div>
+  </div>
+
+  <!-- APP WINDOW -->
+  <div id="app-window">
+    <div class="title-bar">
+      <div class="controls">
+        <span class="btn close"></span>
+        <span class="btn min"></span>
+        <span class="btn max"></span>
+      </div>
+      <span class="title">App</span>
+    </div>
+    <div class="content"></div>
+  </div>
+
+  <!-- DOCK -->
+  <div class="dock">
+    <img src="assets/icons/window-icons/finder.png" data-app="finder" data-name="Finder" alt="Finder">
+    <img src="assets/icons/window-icons/folder.png" data-app="folder" data-name="Folder" alt="Folder">
+    <img src="assets/icons/window-icons/launchpad.png" data-app="launchpad" data-name="Launchpad" alt="Launchpad">
+    <img src="assets/icons/window-icons/terminal.png" data-app="terminal" data-name="Terminal" alt="Terminal">
+    <img src="assets/icons/window-icons/photos.png" data-app="photos" data-name="Photos" alt="Photos">
+    <img src="assets/icons/window-icons/settings.png" data-app="settings" data-name="Settings" alt="Settings">
+    <img src="assets/icons/window-icons/trash.png" data-app="trash" data-name="Trash" alt="Trash">
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>

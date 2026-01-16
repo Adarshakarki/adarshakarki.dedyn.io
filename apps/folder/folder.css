@@ -1,0 +1,47 @@
+.folder-app {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: transparent;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Grid like Finder Icon View */
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 26px;
+}
+
+/* Folder Item */
+.project-folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: url('../../assets/icons/cursors/pointer.png'), pointer;
+  user-select: none;
+}
+
+.project-folder img {
+  width: 72px;
+  height: 72px;
+  transition: transform 0.2s ease;
+}
+
+.project-folder span {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: #222;
+  text-align: center;
+  cursor: url('../../assets/icons/cursors/text.png'), text;
+}
+
+/* Hover / Click Effects */
+.project-folder:hover img {
+  transform: scale(1.08);
+}
+
+.project-folder:active img {
+  transform: scale(0.96);
+}

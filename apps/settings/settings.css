@@ -1,0 +1,109 @@
+.settings-app {
+  height: 100%;
+  padding: 16px;
+  background: #f5f5f7;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  cursor: url('../../assets/icons/cursors/default.png'), default;
+}
+
+/* Search */
+.search-bar input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #e5e5ea;
+  outline: none;
+cursor: url('../../assets/icons/cursors/text.png'), pointer;
+}
+
+/* Apple ID */
+.apple-id {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.apple-id img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+/* List */
+.settings-list {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* iOS-style switch */
+.switch {
+  position: relative;
+  width: 46px;
+  height: 26px;
+cursor: url('../../assets/icons/cursors/pointer.png'), pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #ccc;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  top: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.switch input:checked + .slider {
+  background: #34c759;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}

@@ -1,0 +1,178 @@
+/* ----------------------------- */ 
+/*       GENERAL RESET           */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/*        DESKTOP / BODY         */
+/* ----------------------------- */
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("assets/wallpaper4.jpg") center/cover no-repeat;
+  cursor: url('assets/icons/cursors/default.png'), auto; /* Default arrow */
+}
+
+/* ----------------------------- */
+/*         MENU BAR              */
+/* ----------------------------- */
+.menu-bar {
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  font-size: 13px;
+  color: #000;
+  cursor: url('assets/icons/cursors/default.png'), auto;
+}
+
+.menu-left span, .menu-right span {
+  margin-left: 8px;
+}
+
+.menu-left img.apple,
+.menu-right img.battery {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  cursor: url('assets/icons/cursors/pointer.png'), pointer;
+}
+
+/* ----------------------------- */
+/*            DOCK               */
+/* ----------------------------- */
+.dock {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  padding: 14px 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  cursor: url('assets/icons/cursors/default.png'), auto;
+}
+
+.dock img {
+  width: 44px;
+  transition: transform 0.25s ease;
+  cursor: url('assets/icons/cursors/pointer.png'), pointer;
+}
+
+.dock img:hover {
+  transform: scale(1.6);
+}
+
+/* ----------------------------- */
+/*         APP WINDOW            */
+/* ----------------------------- */
+#app-window {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  min-width: 480px;
+  width: fit-content;
+  max-width: 600px;
+  min-height: 220px;
+  height: fit-content;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+  display: none;
+  overflow: hidden; /* no scrollbars */
+  cursor: url('assets/icons/cursors/pointer.png'), pointer;
+}
+
+#app-window.open {
+  transform: scale(1);
+  opacity: 1;
+  display: block;
+}
+
+/* ----------------------------- */
+/*          TITLE BAR            */
+/* ----------------------------- */
+#app-window .title-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: url('assets/icons/cursors/move.png'), move; /* Drag cursor */
+  user-select: none;
+}
+
+#app-window .controls {
+  display: flex;
+  gap: 8px;
+}
+
+#app-window .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: url('assets/icons/cursors/pointer.png'), pointer;
+}
+
+#app-window .btn.close { background: #ff5f56; }
+#app-window .btn.min   { background: #ffbd2e; }
+#app-window .btn.max   { background: #27c93f; }
+
+#app-window .title {
+  margin-left: 12px;
+  font-size: 13px;
+  color: #333;
+  cursor: url('assets/icons/cursors/default.png'), auto;
+}
+
+/* ----------------------------- */
+/*       CLICK RIPPLE EFFECT     */
+/* ----------------------------- */
+.click-effect {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  animation: clickAnim 0.5s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes clickAnim {
+  0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+  50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+}
+
+/* ----------------------------- */
+/*       APP CONTENT CURSORS     */
+/* ----------------------------- */
+#app-window .content,
+#app-window .content p,
+#app-window .content a {
+  cursor: url('assets/icons/cursors/text.png'), text;
+}
+
+#app-window .content img {
+  cursor: url('assets/icons/cursors/default.png'), auto;
+}
+
+#app-window .content a {
+  cursor: url('assets/icons/cursors/pointer.png'), pointer;
+}
