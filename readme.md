@@ -11,51 +11,51 @@ This project is inspired by [Samidy](https://samidy.com/)
 * Custom mouse cursors for pointer, text, and move actions.
 
 ### Apps
-1. Finder (About Me)
+1. **Finder (About Me)**
 * Displays personal information in a macOS “System Info” style.
 * Rounded profile image with details like bio, social links, and status.
 
-2. Folder (Projects)
+2. **Folder (Projects)**
 * Shows selected GitHub projects in a macOS folder style.
 * Click on a project to open its GitHub repository in a new tab.
 * Supports multiple projects like Crop Compass, Emotion Detection, Elite Roadways, Pass Manager, TodoList.
 
-3. Launchpad (Games / Demos)
+3. **Launchpad (Games / Demos)**
 * Full-screen grid of game icons.
 * Click to open GitHub repositories for games like Impossible TicTacToe, TicTacToe, Tetris, Flappy Bird, Classic Snake.
 * Hover animation with bounce effect.
 
-4. Terminal (Tech Stack)
+4. **Terminal (Tech Stack)**
 * Displays programming languages and tools in a CLI-style window.
 
-5. Photos (Gallery)
+5. **Photos (Gallery)**
 * Scrollable grid of personal images.
 * Dynamic loading of images from the photos/images/ folder.
 
-6. System Settings (Contact & Info)
+6. **System Settings (Contact & Info)**
 * macOS/iOS-style settings window.
 * Fake search bar, animated switches, and SVG placeholder icons.
 * Displays contact info and placeholders.
 
-7. Trash
+7. **Trash**
 * It's empty like my brain.
 
 ### Screenshots
-1. HomePage
+1. **HomePage**
 ![Homepage](assets/screenshots/Homepage.png)
-2. Finder
+2. **Finder**
 ![Finder](assets/screenshots/finder.png)
-3. Folder
+3. **Folder**
 ![Folder](assets/screenshots/folder.png)
-4. Launchpad
+4. **Launchpad**
 ![LaunchPad](assets/screenshots/Launchpad.png)
-5. Terminal
+5. **Terminal**
 ![Terminal](assets/screenshots/terminal.png)
-6. Photos
+6. **Photos**
 ![Photos](assets/screenshots/photos.png)
-7. Settings
+7. **Settings**
 ![Settings](assets/screenshots/settings.png)
-8. Trash
+8. **Trash**
 ![Trash](assets/screenshots/terminal.png)
 
 ### Future Improvements
@@ -68,4 +68,4 @@ This project is inspired by [Samidy](https://samidy.com/)
 * **Search functionality:** Implement a working desktop search bar for apps and files.
 * **Improved drag/drop:** Allow multiple windows to be stacked and snapped.
 
-### Visit my [Portfolio](http://adarshakarki.com.np/)
+### **Visit my [Portfolio](http://adarshakarki.com.np/)**
